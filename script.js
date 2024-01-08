@@ -12,11 +12,8 @@ form.addEventListener('submit', event => {
 
 
 function addTask(taskValue) {
-    console.log("Entrou aqui")
     const arrayOfTasks = [];
     arrayOfTasks.push(taskValue);
-
-    console.log(arrayOfTasks[0]);
     arrayOfTasks.forEach(element => {
 
         // Criando tarefa
@@ -33,9 +30,6 @@ function addTask(taskValue) {
         });
 
         newBlock.appendChild(removeButton);
-
-
-
         listOftasks.appendChild(newBlock);
     });
 }
